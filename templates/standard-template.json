@@ -1,0 +1,44 @@
+# Standard Specification Template
+# This template defines the structure for media standards
+
+{
+  "jsonrpc": "2.0",
+  "method": "media.get",
+  "params": {
+    "category": "standard",
+    "version": "1.0",
+    "standard": {
+      "id": "{{id}}",
+      "name": "{{name}}",
+      "abbreviation": "{{abbreviation}}",
+      "category": "{{category}}",
+      "description": "{{description}}",
+      "specification": {
+        "document_id": "{{spec_doc_id}}",
+        "document_url": "{{spec_doc_url}}",
+        "version": "{{spec_version}}"
+      },
+      "governance": {
+        "standards_body": "{{standards_body}}",
+        "website": "{{website}}",
+        "contact": "{{contact}}"
+      },
+      "compatibility": {
+        "compatible_with": ["{{compatible_1}}", "{{compatible_2}}"],
+        "supersedes": ["{{supersedes_1}}", "{{supersedes_2}}"],
+        "superseded_by": "{{superseded_by}}"
+      },
+      "implementation": {
+        "reference_implementations": ["{{implementation_1}}", "{{implementation_2}}"],
+        "test_suites": ["{{test_suite_1}}", "{{test_suite_2}}"]
+      },
+      "metadata": {
+        "year_introduced": "{{year}}",
+        "year_deprecated": "{{year_deprecated}}",
+        "current_status": "{{status}}",
+        "typical_applications": ["{{application_1}}", "{{application_2}}"]
+      }
+    }
+  },
+  "id": "standard-{{id}}-{{timestamp}}"
+}

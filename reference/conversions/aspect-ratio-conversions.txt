@@ -1,0 +1,53 @@
+# Aspect Ratio Conversion Reference
+# This file provides conversion references between common aspect ratios
+
+# Conversion: 4:3 to 16:9
+source_ratio: 4:3
+target_ratio: 16:9
+conversion_formula: width * (16/12) × height * (9/12)
+pillarbox_width_percentage: 25%
+notes: When converting 4:3 content to 16:9 displays, content is typically pillarboxed (black bars on sides).
+
+# Conversion: 16:9 to 4:3
+source_ratio: 16:9
+target_ratio: 4:3
+conversion_formula: width * (12/16) × height * (12/9)
+letterbox_height_percentage: 25%
+notes: When converting 16:9 content to 4:3 displays, content is typically letterboxed (black bars on top/bottom).
+
+# Conversion: 16:9 to 21:9
+source_ratio: 16:9
+target_ratio: 21:9
+conversion_formula: width * (21/16) × height * (9/9)
+letterbox_height_percentage: 0%
+crop_width_percentage: 25%
+notes: When converting 16:9 to 21:9, either letterbox or crop the content.
+
+# Conversion: 1.85:1 to 2.39:1 (Cinema)
+source_ratio: 1.85:1
+target_ratio: 2.39:1
+conversion_formula: width × height * (1.85/2.39)
+letterbox_height_percentage: 22.6%
+notes: Film conversion from standard widescreen to anamorphic format.
+
+# Conversion: Square to Instagram Portrait
+source_ratio: 1:1
+target_ratio: 4:5
+conversion_formula: width × height * (5/4)
+crop_height_percentage: 20%
+notes: When converting square format to Instagram portrait format.
+
+# Conversion: Pixels to Physical Size
+calculation: pixels ÷ PPI = physical size in inches
+example: "1920 pixels ÷ 96 PPI = 20 inches"
+notes: Converting pixel dimensions to physical dimensions requires knowing the pixel density (PPI).
+
+# Conversion: PPI to PPCM
+conversion_formula: PPI ÷ 2.54 = PPCM
+example: "96 PPI ÷ 2.54 = 37.8 PPCM"
+notes: Converting pixels per inch to pixels per centimeter.
+
+# Conversion: Resolution to Total Pixels
+conversion_formula: width × height = total pixels
+example: "1920 × 1080 = 2,073,600 pixels"
+notes: Calculating the total number of pixels from resolution dimensions.

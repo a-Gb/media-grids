@@ -1,0 +1,216 @@
+# Cinema Formats Template
+# This template follows JSON-RPC 2.0 specification
+# Process this file to generate a valid JSON-RPC document
+
+# TEMPLATE-START
+{
+  "jsonrpc": "2.0",
+  "method": "media.get",
+  "params": {
+    "category": "cinema",
+    "version": "1.0",
+    "formats": [
+      # FORMAT-ITEM-START
+      {
+        "id": "{{id}}",
+        "name": "{{name}}",
+        "aspect_ratio": {
+          "ratio": "{{aspect_ratio}}",
+          "decimal": "{{decimal_ratio}}",
+          "description": "{{ratio_description}}"
+        },
+        "resolution": {
+          "width": "{{width}}",
+          "height": "{{height}}",
+          "pixels": "{{total_pixels}}",
+          "units": "pixels"
+        },
+        "year_introduced": "{{year}}",
+        "region": "{{region}}",
+        "metadata": {
+          "notes": "{{notes}}",
+          "alternative_names": ["{{alt_name_1}}", "{{alt_name_2}}"],
+          "predecessors": ["{{predecessor_1}}", "{{predecessor_2}}"],
+          "successors": ["{{successor_1}}", "{{successor_2}}"]
+        },
+        "specifications": {
+          "typical_projection_distance": "{{projection_distance}}",
+          "recommended_viewing_distance": "{{viewing_distance}}",
+          "color_depth": "{{color_depth}}",
+          "color_space": "{{color_space}}"
+        },
+        "usage": {
+          "common_applications": ["{{application_1}}", "{{application_2}}"],
+          "notable_examples": ["{{example_1}}", "{{example_2}}"]
+        }
+      }
+      # FORMAT-ITEM-END
+    ]
+  },
+  "id": "cinema-formats-{{timestamp}}"
+}
+# TEMPLATE-END
+
+# ITEM-DATA-START
+# Academy Ratio
+id: academy-ratio
+name: Academy Ratio
+aspect_ratio: 1.375:1
+decimal_ratio: 1.375
+ratio_description: Classic Hollywood standard aspect ratio
+width: 1024
+height: 745
+total_pixels: 762880
+year: 1932
+region: Global
+notes: Classic Hollywood standard from 1932-1952
+alt_name_1: Academy Flat
+alt_name_2: Academy Aperture
+predecessor_1: Silent film (1.33:1)
+predecessor_2: 
+successor_1: Widescreen (1.85:1)
+successor_2: CinemaScope (2.35:1)
+projection_distance: Variable
+viewing_distance: 2-3x screen height
+color_depth: N/A (originally black and white film)
+color_space: N/A
+application_1: Classic Hollywood cinema
+application_2: Historical film presentations
+example_1: Casablanca (1942)
+example_2: Citizen Kane (1941)
+
+# Widescreen
+id: widescreen
+name: Widescreen
+aspect_ratio: 1.85:1
+decimal_ratio: 1.85
+ratio_description: Common theatrical format in the United States
+width: 1998
+height: 1080
+total_pixels: 2157840
+year: 1953
+region: United States
+notes: Common theatrical format in the United States
+alt_name_1: US Widescreen
+alt_name_2: Flat
+predecessor_1: Academy Ratio (1.375:1)
+predecessor_2: 
+successor_1: Digital Cinema 2K
+successor_2: 
+projection_distance: Variable
+viewing_distance: 1.5-2.5x screen width
+color_depth: Variable
+color_space: DCI-P3 (modern)
+application_1: Hollywood cinema
+application_2: US theatrical releases
+example_1: Jurassic Park
+example_2: The Godfather
+
+# Anamorphic
+id: anamorphic
+name: Anamorphic
+aspect_ratio: 2.39:1
+decimal_ratio: 2.39
+ratio_description: Modern standard for anamorphic theatrical projection
+width: 2048
+height: 858
+total_pixels: 1757184
+year: 1957
+region: Global
+notes: Modern standard for anamorphic theatrical projection
+alt_name_1: Scope
+alt_name_2: CinemaScope
+predecessor_1: CinemaScope (2.35:1)
+predecessor_2: 
+successor_1: Digital Anamorphic
+successor_2: 
+projection_distance: Variable
+viewing_distance: 1-2x screen width
+color_depth: Variable
+color_space: DCI-P3
+application_1: Epic films
+application_2: Action movies
+example_1: Star Wars
+example_2: Lawrence of Arabia
+
+# IMAX
+id: imax
+name: IMAX
+aspect_ratio: 1.90:1
+decimal_ratio: 1.9
+ratio_description: Large format theatrical system
+width: 4096
+height: 2160
+total_pixels: 8847360
+year: 1970
+region: Global
+notes: Large format theatrical system
+alt_name_1: Digital IMAX
+alt_name_2: 
+predecessor_1: 
+predecessor_2: 
+successor_1: IMAX with Laser
+successor_2: 
+projection_distance: Variable
+viewing_distance: 1x screen height minimum
+color_depth: 12-bit
+color_space: IMAX proprietary (covers beyond DCI-P3)
+application_1: Blockbuster films
+application_2: Documentary films
+example_1: Dune
+example_2: Interstellar
+
+# IMAX 70mm
+id: imax-70mm
+name: IMAX 70mm
+aspect_ratio: 1.43:1
+decimal_ratio: 1.43
+ratio_description: Traditional 15/70 film IMAX format
+width: 4096
+height: 2865
+total_pixels: 11735040
+year: 1970
+region: Global
+notes: Traditional 15/70 film IMAX format
+alt_name_1: 15/70 IMAX
+alt_name_2: GT IMAX
+predecessor_1: 70mm film (2.2:1)
+predecessor_2: 
+successor_1: Digital IMAX (1.90:1)
+successor_2: 
+projection_distance: 20-30m
+viewing_distance: 0.8-1x screen height
+color_depth: Film-dependent
+color_space: Film-dependent (wider than DCI-P3)
+application_1: Premium theater experiences
+application_2: Museum installations
+example_1: The Dark Knight
+example_2: Dunkirk (2017)
+
+# Digital Cinema 4K
+id: digital-cinema-4k
+name: Digital Cinema 4K
+aspect_ratio: 1.90:1
+decimal_ratio: 1.9
+ratio_description: Standard resolution for modern digital cinema projection
+width: 4096
+height: 2160
+total_pixels: 8847360
+year: 2005
+region: Global
+notes: Standard resolution for modern digital cinema projection
+alt_name_1: 4K DCP
+alt_name_2: 
+predecessor_1: Digital Cinema 2K
+predecessor_2: 
+successor_1: Digital Cinema 8K
+successor_2: 
+projection_distance: Variable
+viewing_distance: 1.5x screen height
+color_depth: 12-bit
+color_space: DCI-P3
+application_1: Modern theatrical releases
+application_2: Premium format presentations
+example_1: Most major studio films since 2015
+example_2: Avatar (2009)
+# ITEM-DATA-END

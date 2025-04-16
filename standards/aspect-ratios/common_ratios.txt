@@ -1,0 +1,419 @@
+# Common Aspect Ratios Template
+# This template follows JSON-RPC 2.0 specification
+# Process this file to generate a valid JSON-RPC document
+
+# TEMPLATE-START
+{
+  "jsonrpc": "2.0",
+  "method": "media.get",
+  "params": {
+    "category": "standards.aspect_ratios",
+    "version": "1.0",
+    "categories": [
+      # CATEGORY-ITEM-START
+      {
+        "category_id": "{{category_id}}",
+        "category_name": "{{category_name}}",
+        "description": "{{category_description}}",
+        "ratios": [
+          # RATIO-ITEM-START
+          {
+            "id": "{{ratio_id}}",
+            "name": "{{ratio_name}}",
+            "ratio": "{{ratio}}",
+            "decimal": "{{decimal}}",
+            "inverse": "{{inverse}}",
+            "description": "{{ratio_description}}",
+            "history": {
+              "origin": "{{origin}}",
+              "year_introduced": "{{year_introduced}}",
+              "creator": "{{creator}}",
+              "predecessor": "{{predecessor}}",
+              "successor": "{{successor}}"
+            },
+            "common_resolutions": [
+              # RESOLUTION-ITEM-START
+              {
+                "width": "{{res_width}}",
+                "height": "{{res_height}}",
+                "total_pixels": "{{res_pixels}}",
+                "name": "{{res_name}}",
+                "usage": "{{res_usage}}"
+              }
+              # RESOLUTION-ITEM-END
+            ],
+            "applications": {
+              "primary_uses": ["{{primary_use_1}}", "{{primary_use_2}}"],
+              "industries": ["{{industry_1}}", "{{industry_2}}"],
+              "media_types": ["{{media_type_1}}", "{{media_type_2}}"]
+            },
+            "visual_properties": {
+              "composition_notes": "{{composition_notes}}",
+              "psychological_effect": "{{psychological_effect}}",
+              "compatibility": ["{{compatibility_1}}", "{{compatibility_2}}"]
+            },
+            "math": {
+              "conversion_factor": "{{conversion_factor}}",
+              "golden_ratio_proximity": "{{golden_ratio_proximity}}",
+              "related_ratios": ["{{related_ratio_1}}", "{{related_ratio_2}}"]
+            }
+          }
+          # RATIO-ITEM-END
+        ]
+      }
+      # CATEGORY-ITEM-END
+    ]
+  },
+  "id": "aspect-ratios-{{timestamp}}"
+}
+# TEMPLATE-END
+
+# ITEM-DATA-START
+# Square Formats
+category_id: square
+category_name: Square
+category_description: Perfect 1:1 aspect ratios, commonly used in social media and specific artistic contexts
+
+# Square (1:1)
+ratio_id: square
+ratio_name: Square
+ratio: 1:1
+decimal: 1.0
+inverse: 1:1
+ratio_description: Perfect square format with equal width and height
+origin: Fundamental geometric shape
+year_introduced: Ancient
+creator: N/A
+predecessor: N/A
+successor: N/A
+res_width: 1080
+res_height: 1080
+res_pixels: 1166400
+res_name: Instagram Square
+res_usage: Standard Instagram post format
+primary_use_1: Social media posts
+primary_use_2: Album artwork
+industry_1: Social media
+industry_2: Photography
+media_type_1: Digital photography
+media_type_2: Profile pictures
+composition_notes: Perfect symmetry, equal emphasis on vertical and horizontal
+psychological_effect: Stability, balance, honesty
+compatibility_1: Fits equally well in portrait and landscape displays
+compatibility_2: No cropping needed for circular frames
+conversion_factor: 1.0
+golden_ratio_proximity: 0.618 away
+related_ratio_1: 4:5 (Instagram portrait)
+related_ratio_2: 5:4 (Large format photography)
+
+# Television & Digital Video
+category_id: television
+category_name: Television & Digital Video
+category_description: Common aspect ratios used in broadcast television, streaming content, and digital video production
+
+# 4:3 (Standard Definition)
+ratio_id: standard-tv
+ratio_name: Standard Television
+ratio: 4:3
+decimal: 1.33
+inverse: 3:4
+ratio_description: Traditional television and early computer monitor aspect ratio
+origin: Movie film standards
+year_introduced: 1940s
+creator: Television industry
+predecessor: Various early television ratios
+successor: 16:9 widescreen
+res_width: 720
+res_height: 540
+res_pixels: 388800
+res_name: SD TV (4:3)
+res_usage: Standard definition television broadcast
+res_width: 800
+res_height: 600
+res_pixels: 480000
+res_name: SVGA
+res_usage: Early computer displays
+primary_use_1: Broadcast television (pre-2000s)
+primary_use_2: Early digital photography
+industry_1: Television
+industry_2: Early computing
+media_type_1: Broadcast content
+media_type_2: Computer displays
+composition_notes: More vertical space than widescreen, good for human subjects
+psychological_effect: Traditional, classic, formal
+compatibility_1: Fits on older displays without letterboxing
+compatibility_2: Easily subdivides into quadrants
+conversion_factor: 1.333
+golden_ratio_proximity: 0.285 away
+related_ratio_1: 3:2 (35mm photography)
+related_ratio_2: 5:4 (Large format photography)
+
+# 16:9 (Widescreen)
+ratio_id: widescreen
+ratio_name: Widescreen
+ratio: 16:9
+decimal: 1.78
+inverse: 9:16
+ratio_description: Standard aspect ratio for modern televisions, monitors and digital video
+origin: HDTV standards
+year_introduced: 1990s
+creator: ITU-R BT.709
+predecessor: 4:3 television
+successor: 21:9 ultrawide
+res_width: 1280
+res_height: 720
+res_pixels: 921600
+res_name: 720p HD
+res_usage: HD broadcast, older HD content
+res_width: 1920
+res_height: 1080
+res_pixels: 2073600
+res_name: 1080p Full HD
+res_usage: Standard HD content
+res_width: 3840
+res_height: 2160
+res_pixels: 8294400
+res_name: 4K UHD
+res_usage: Ultra high definition content
+primary_use_1: Modern television and video
+primary_use_2: Streaming content
+industry_1: Broadcast media
+industry_2: Consumer electronics
+media_type_1: Television
+media_type_2: Online video
+composition_notes: Horizontally oriented, good for landscapes and cinematic content
+psychological_effect: Modern, cinematic, immersive
+compatibility_1: Standard for most modern displays
+compatibility_2: Good compromise between 4:3 and wider cinema formats
+conversion_factor: 1.778
+golden_ratio_proximity: 0.14 away
+related_ratio_1: 21:9 (Ultrawide cinema)
+related_ratio_2: 2.39:1 (Anamorphic cinema)
+
+# 21:9 (Ultrawide)
+ratio_id: ultrawide
+ratio_name: Ultrawide
+ratio: 21:9
+decimal: 2.33
+inverse: 9:21
+ratio_description: Extra-wide format for cinema-style content and ultrawide monitors
+origin: Approximation of cinematic formats for displays
+year_introduced: 2010s
+creator: Display industry
+predecessor: 16:9 widescreen
+successor: 32:9 super ultrawide
+res_width: 2560
+res_height: 1080
+res_pixels: 2764800
+res_name: Full HD Ultrawide
+res_usage: Entry-level ultrawide monitors
+res_width: 3440
+res_height: 1440
+res_pixels: 4953600
+res_name: UWQHD
+res_usage: Standard ultrawide gaming monitors
+primary_use_1: Cinematic video content
+primary_use_2: Gaming and productivity monitors
+industry_1: Film and cinema
+industry_2: Computer hardware
+media_type_1: Movies
+media_type_2: PC gaming
+composition_notes: Strongly emphasizes horizontal space, panoramic views
+psychological_effect: Epic, cinematic, immersive
+compatibility_1: Requires letterboxing on 16:9 displays
+compatibility_2: Good for multi-window workflows
+conversion_factor: 2.33
+golden_ratio_proximity: 0.76 away
+related_ratio_1: 2.39:1 (Anamorphic cinema)
+related_ratio_2: 2.2:1 (70mm film)
+
+# Film & Cinema
+category_id: cinema
+category_name: Film & Cinema
+category_description: Aspect ratios specifically developed for theatrical film presentation and cinema
+
+# 1.85:1 (US Widescreen)
+ratio_id: us-widescreen
+ratio_name: US Widescreen
+ratio: 1.85:1
+decimal: 1.85
+inverse: 1:1.85
+ratio_description: Standard US theatrical release format
+origin: Hollywood
+year_introduced: 1953
+creator: Paramount Pictures
+predecessor: Academy Ratio (1.375:1)
+successor: Digital Cinema (1.85:1)
+res_width: 1998
+res_height: 1080
+res_pixels: 2157840
+res_name: Digital Cinema 2K flat
+res_usage: Digital cinema projection
+primary_use_1: Hollywood theatrical releases
+primary_use_2: US film distribution
+industry_1: Film
+industry_2: Theatrical exhibition
+media_type_1: Feature films
+media_type_2: Digital cinema
+composition_notes: Comfortably wide for cinematic composition without extreme panoramic effect
+psychological_effect: Professional, cinematic, polished
+compatibility_1: Minor letterboxing on 16:9 displays
+compatibility_2: Efficient use of theater screen space
+conversion_factor: 1.85
+golden_ratio_proximity: 0.23 away
+related_ratio_1: 16:9 (1.78:1)
+related_ratio_2: 2.39:1 (Anamorphic)
+
+# 2.39:1 (Anamorphic)
+ratio_id: anamorphic
+ratio_name: Anamorphic Widescreen
+ratio: 2.39:1
+decimal: 2.39
+inverse: 1:2.39
+ratio_description: Ultra-wide cinematic format for epic and expansive theatrical films
+origin: CinemaScope technology
+year_introduced: 1957
+creator: SMPTE standard revision
+predecessor: 2.35:1 (original CinemaScope)
+successor: Digital Anamorphic
+res_width: 2048
+res_height: 858
+res_pixels: 1757184
+res_name: Digital Cinema 2K Scope
+res_usage: Digital cinema projection
+primary_use_1: Epic film productions
+primary_use_2: Action and science fiction films
+industry_1: Feature film
+industry_2: Blockbuster cinema
+media_type_1: Theatrical releases
+media_type_2: IMAX alternative presentations
+composition_notes: Extremely wide frame, emphasizes landscape and horizontal movement
+psychological_effect: Epic, vast, expansive
+compatibility_1: Significant letterboxing on 16:9 displays
+compatibility_2: Maximizes immersion in theater setting
+conversion_factor: 2.39
+golden_ratio_proximity: 0.77 away
+related_ratio_1: 21:9 (2.33:1)
+related_ratio_2: 2.2:1 (70mm film)
+
+# Mobile Devices
+category_id: mobile
+category_name: Mobile Devices
+category_description: Specialized aspect ratios used in smartphones and tablets, typically taller than traditional display formats
+
+# 19.5:9 (Modern Smartphone)
+ratio_id: modern-smartphone
+ratio_name: Modern Smartphone
+ratio: 19.5:9
+decimal: 2.17
+inverse: 9:19.5
+ratio_description: Ultra-tall aspect ratio for modern bezel-less smartphones
+origin: Mobile device evolution
+year_introduced: 2017
+creator: Smartphone industry
+predecessor: 16:9 smartphones
+successor: 20:9+ ultra-tall
+res_width: 1125
+res_height: 2436
+res_pixels: 2740500
+res_name: iPhone X/XS/11 Pro
+res_usage: Apple flagship phones (2017-2019)
+res_width: 1080
+res_height: 2340
+res_pixels: 2527200
+res_name: Various Android FHD+
+res_usage: Android smartphones (2018+)
+primary_use_1: Smartphones
+primary_use_2: Mobile gaming
+industry_1: Mobile devices
+industry_2: App development
+media_type_1: Mobile UI
+media_type_2: Mobile video
+composition_notes: Very tall format, good for scrolling content and full-body photography
+psychological_effect: Modern, sleek, premium
+compatibility_1: Requires adaptation from traditional 16:9 video
+compatibility_2: Good for two-handed vertical operation
+conversion_factor: 2.17
+golden_ratio_proximity: 0.551 away
+related_ratio_1: 16:9 (legacy smartphones)
+related_ratio_2: 9:16 (vertical video)
+
+# Print Media
+category_id: print
+category_name: Print Media
+category_description: Aspect ratios common in printed materials, often based on international standards or traditional formats
+
+# ISO 216 (√2:1)
+ratio_id: iso-216
+ratio_name: ISO 216 Paper Sizes
+ratio: √2:1
+decimal: 1.414
+inverse: 1:√2
+ratio_description: International standard paper sizes (A series) based on the square root of 2
+origin: German DIN standard
+year_introduced: 1922
+creator: Walter Porstmann
+predecessor: Various regional standards
+successor: N/A
+res_width: 210
+res_height: 297
+res_pixels: 62370
+res_name: A4
+res_usage: Standard international paper size
+res_width: 297
+res_height: 420
+res_pixels: 124740
+res_name: A3
+res_usage: Larger print materials
+primary_use_1: Business documents
+primary_use_2: Publishing
+industry_1: Office
+industry_2: Printing
+media_type_1: Documents
+media_type_2: Books and magazines
+composition_notes: Retains its proportions when folded in half
+psychological_effect: Professional, international, systematic
+compatibility_1: Each size is exactly half of the next larger size
+compatibility_2: Fits perfectly in file folders and storage systems
+conversion_factor: 1.414
+golden_ratio_proximity: 0.204 away
+related_ratio_1: 8.5x11 (US Letter)
+related_ratio_2: 1:1.618 (Golden Ratio)
+
+# Photography
+category_id: photography
+category_name: Photography
+category_description: Common aspect ratios used in photography across different formats and equipment types
+
+# 3:2 (35mm Film)
+ratio_id: 35mm
+ratio_name: 35mm Film
+ratio: 3:2
+decimal: 1.5
+inverse: 2:3
+ratio_description: Standard 35mm film format used in most SLR and DSLR cameras
+origin: 35mm Leica film
+year_introduced: 1913
+creator: Oskar Barnack
+predecessor: Medium and large format
+successor: Digital variants
+res_width: 6000
+res_height: 4000
+res_pixels: 24000000
+res_name: 24MP DSLR
+res_usage: Standard full-frame DSLR resolution
+primary_use_1: Professional photography
+primary_use_2: Consumer cameras
+industry_1: Photography
+industry_2: Journalism
+media_type_1: Digital and film photos
+media_type_2: Prints
+composition_notes: Balanced format, slightly wider than tall
+psychological_effect: Classic, professional, traditional
+compatibility_1: Easily crops to either 4:3 or 16:9
+compatibility_2: Standard for photo prints
+conversion_factor: 1.5
+golden_ratio_proximity: 0.118 away
+related_ratio_1: 4:3 (Micro Four Thirds)
+related_ratio_2: 1:1 (Square format)
+# ITEM-DATA-END

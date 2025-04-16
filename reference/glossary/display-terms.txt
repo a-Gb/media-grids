@@ -1,0 +1,50 @@
+# Display Technology Glossary
+# This file contains definitions of common display technology terms
+
+# Term: Aspect Ratio
+id: aspect-ratio
+term: Aspect Ratio
+definition: The proportional relationship between the width and height of a display or image, typically expressed as a ratio such as 16:9 or 4:3.
+related_terms: resolution, display format
+reference_standard: aspect-ratios
+reference_id: common-ratios
+
+# Term: Resolution
+id: resolution
+term: Resolution
+definition: The number of distinct pixels in each dimension that can be displayed, typically expressed as width × height (e.g., 1920×1080).
+related_terms: aspect ratio, pixel density, 4K, 8K
+reference_standard: resolutions
+reference_id: common-resolutions
+
+# Term: Refresh Rate
+id: refresh-rate
+term: Refresh Rate
+definition: The number of times per second that a display updates its buffer, measured in hertz (Hz). Higher refresh rates reduce motion blur and create smoother animations.
+related_terms: frame rate, motion blur, input lag
+reference_standard: temporal.refresh-rates
+reference_id: display-refresh-rates
+
+# Term: Color Gamut
+id: color-gamut
+term: Color Gamut
+definition: The complete subset of colors that can be accurately represented in a given color space or by a specific display technology.
+related_terms: color space, color depth, wide color gamut
+reference_standard: color.gamuts
+reference_id: display-color-gamuts
+
+# Term: HDR (High Dynamic Range)
+id: hdr
+term: HDR (High Dynamic Range)
+definition: A display technology that enables a wider range of luminance levels, producing greater contrast between light and dark areas of an image for a more realistic visual experience.
+related_terms: SDR, contrast ratio, nits, local dimming
+reference_standard: color
+reference_id: hdr-standards
+
+# Term: Pixel Density
+id: pixel-density
+term: Pixel Density
+definition: The concentration of pixels on a display, typically measured in pixels per inch (PPI) or pixels per centimeter (PPCM). Higher pixel density results in sharper images with less visible pixelation.
+related_terms: resolution, retina display, 4K, 8K
+reference_standard: resolutions
+reference_id: pixel-density-metrics

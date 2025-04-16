@@ -1,0 +1,377 @@
+# Television Standards Template
+# This template follows JSON-RPC 2.0 specification
+# Process this file to generate a valid JSON-RPC document
+
+# TEMPLATE-START
+{
+  "jsonrpc": "2.0",
+  "method": "media.get",
+  "params": {
+    "category": "television",
+    "version": "1.0",
+    "standards": [
+      # STANDARD-ITEM-START
+      {
+        "standard_id": "{{standard_id}}",
+        "name": "{{name}}",
+        "abbreviation": "{{abbreviation}}",
+        "description": "{{description}}",
+        "formats": [
+          # FORMAT-ITEM-START
+          {
+            "id": "{{format_id}}",
+            "name": "{{format_name}}",
+            "aspect_ratio": {
+              "ratio": "{{aspect_ratio}}",
+              "decimal": "{{decimal_ratio}}"
+            },
+            "resolution": {
+              "width": "{{width}}",
+              "height": "{{height}}",
+              "total_pixels": "{{total_pixels}}"
+            },
+            "scanning": {
+              "type": "{{scan_type}}",
+              "interlaced": "{{interlaced}}",
+              "refresh_rate": ["{{refresh_rate_1}}", "{{refresh_rate_2}}"],
+              "field_rate": "{{field_rate}}"
+            },
+            "color": {
+              "color_space": "{{color_space}}",
+              "bit_depth": "{{bit_depth}}",
+              "color_subsampling": "{{color_subsampling}}"
+            },
+            "region": {
+              "primary_regions": ["{{region_1}}", "{{region_2}}"],
+              "regulatory_bodies": ["{{regulatory_1}}", "{{regulatory_2}}"]
+            },
+            "historical": {
+              "year_introduced": "{{year}}",
+              "year_discontinued": "{{year_discontinued}}",
+              "predecessor": "{{predecessor}}",
+              "successor": "{{successor}}"
+            },
+            "physical": {
+              "typical_screen_sizes": ["{{screen_size_1}}", "{{screen_size_2}}"],
+              "typical_viewing_distance": "{{viewing_distance}}"
+            },
+            "transmission": {
+              "bandwidth": "{{bandwidth}}",
+              "modulation": "{{modulation}}",
+              "compression": "{{compression}}"
+            }
+          }
+          # FORMAT-ITEM-END
+        ]
+      }
+      # STANDARD-ITEM-END
+    ]
+  },
+  "id": "television-standards-{{timestamp}}"
+}
+# TEMPLATE-END
+
+# ITEM-DATA-START
+# Standard Definition (SD)
+standard_id: sd
+name: Standard Definition
+abbreviation: SD
+description: First generation of standardized television broadcast and display formats predating high definition
+
+# NTSC
+format_id: ntsc
+format_name: NTSC
+aspect_ratio: 4:3
+decimal_ratio: 1.33
+width: 720
+height: 480
+total_pixels: 345600
+scan_type: interlaced
+interlaced: true
+refresh_rate_1: 29.97
+refresh_rate_2: 23.98
+field_rate: 59.94
+color_space: SMPTE-C
+bit_depth: 8
+color_subsampling: 4:2:0
+region_1: North America
+region_2: Japan
+regulatory_1: FCC
+regulatory_2: NTSC Committee
+year: 1953
+year_discontinued: 2009
+predecessor: NTSC (black and white)
+successor: ATSC (digital)
+screen_size_1: 13"-27" (CRT era)
+screen_size_2: 27"-36" (late SD era)
+viewing_distance: 7x picture height
+bandwidth: 6 MHz
+modulation: VSB-AM (video), FM (audio)
+compression: None (analog)
+
+# PAL
+format_id: pal
+format_name: PAL
+aspect_ratio: 4:3
+decimal_ratio: 1.33
+width: 720
+height: 576
+total_pixels: 414720
+scan_type: interlaced
+interlaced: true
+refresh_rate_1: 25
+refresh_rate_2: 
+field_rate: 50
+color_space: EBU Tech. 3213
+bit_depth: 8
+color_subsampling: 4:2:0
+region_1: Europe
+region_2: Australia
+regulatory_1: EBU
+regulatory_2: ITU
+year: 1967
+year_discontinued: 2012
+predecessor: 405-line monochrome
+successor: DVB (digital)
+screen_size_1: 14"-28" (CRT era)
+screen_size_2: 28"-36" (late SD era)
+viewing_distance: 7x picture height
+bandwidth: 7-8 MHz
+modulation: VSB-AM (video), FM (audio)
+compression: None (analog)
+
+# High Definition (HD)
+standard_id: hd
+name: High Definition
+abbreviation: HD
+description: Digital television formats with significantly higher resolution than standard definition
+
+# 720p
+format_id: 720p
+format_name: 720p
+aspect_ratio: 16:9
+decimal_ratio: 1.78
+width: 1280
+height: 720
+total_pixels: 921600
+scan_type: progressive
+interlaced: false
+refresh_rate_1: 50
+refresh_rate_2: 60
+field_rate: N/A
+color_space: BT.709
+bit_depth: 8-10
+color_subsampling: 4:2:0 to 4:2:2
+region_1: Global
+region_2: 
+regulatory_1: ITU
+regulatory_2: SMPTE
+year: 1996
+year_discontinued: 
+predecessor: ED (Enhanced Definition)
+successor: 1080p
+screen_size_1: 26"-42"
+screen_size_2: 42"-60"
+viewing_distance: 5x picture height
+bandwidth: 6-19 Mbps
+modulation: 8VSB (ATSC), COFDM (DVB)
+compression: MPEG-2, AVC/H.264
+
+# 1080i
+format_id: 1080i
+format_name: 1080i
+aspect_ratio: 16:9
+decimal_ratio: 1.78
+width: 1920
+height: 1080
+total_pixels: 2073600
+scan_type: interlaced
+interlaced: true
+refresh_rate_1: 25
+refresh_rate_2: 30
+field_rate: 50/60
+color_space: BT.709
+bit_depth: 8-10
+color_subsampling: 4:2:0 to 4:2:2
+region_1: Global
+region_2: 
+regulatory_1: ITU
+regulatory_2: SMPTE
+year: 1998
+year_discontinued: 
+predecessor: 720p
+successor: 1080p
+screen_size_1: 32"-65"
+screen_size_2: 65"-85"
+viewing_distance: 3x picture height
+bandwidth: 8-20 Mbps
+modulation: 8VSB (ATSC), COFDM (DVB)
+compression: MPEG-2, AVC/H.264
+
+# 1080p
+format_id: 1080p
+format_name: 1080p (Full HD)
+aspect_ratio: 16:9
+decimal_ratio: 1.78
+width: 1920
+height: 1080
+total_pixels: 2073600
+scan_type: progressive
+interlaced: false
+refresh_rate_1: 24
+refresh_rate_2: 60
+field_rate: N/A
+color_space: BT.709
+bit_depth: 8-10
+color_subsampling: 4:2:0 to 4:4:4
+region_1: Global
+region_2: 
+regulatory_1: ITU
+regulatory_2: SMPTE
+year: 2006
+year_discontinued: 
+predecessor: 1080i
+successor: 4K UHD
+screen_size_1: 32"-65"
+screen_size_2: 65"-85"
+viewing_distance: 3x picture height
+bandwidth: 8-40 Mbps
+modulation: n/a (primarily non-broadcast)
+compression: AVC/H.264, HEVC/H.265
+
+# Ultra High Definition (UHD)
+standard_id: uhd
+name: Ultra High Definition
+abbreviation: UHD
+description: Extremely high resolution display formats with at least 4 times the pixel count of Full HD
+
+# 4K UHD
+format_id: 4k-uhd
+format_name: 4K UHD
+aspect_ratio: 16:9
+decimal_ratio: 1.78
+width: 3840
+height: 2160
+total_pixels: 8294400
+scan_type: progressive
+interlaced: false
+refresh_rate_1: 24
+refresh_rate_2: 120
+field_rate: N/A
+color_space: BT.2020
+bit_depth: 10-12
+color_subsampling: 4:2:0 to 4:4:4
+region_1: Global
+region_2: 
+regulatory_1: ITU
+regulatory_2: CTA
+year: 2012
+year_discontinued: 
+predecessor: 1080p
+successor: 8K UHD
+screen_size_1: 43"-75"
+screen_size_2: 75"-98"
+viewing_distance: 1.5x picture height
+bandwidth: 25-100 Mbps
+modulation: COFDM (DVB-T2)
+compression: HEVC/H.265, AV1
+
+# 8K UHD
+format_id: 8k-uhd
+format_name: 8K UHD
+aspect_ratio: 16:9
+decimal_ratio: 1.78
+width: 7680
+height: 4320
+total_pixels: 33177600
+scan_type: progressive
+interlaced: false
+refresh_rate_1: 24
+refresh_rate_2: 120
+field_rate: N/A
+color_space: BT.2020
+bit_depth: 10-12
+color_subsampling: 4:2:0 to 4:4:4
+region_1: Japan
+region_2: Global (limited)
+regulatory_1: ITU
+regulatory_2: CTA
+year: 2019
+year_discontinued: 
+predecessor: 4K UHD
+successor: 
+screen_size_1: 65"-85"
+screen_size_2: 85"-110"
+viewing_distance: 0.75x picture height
+bandwidth: 80-150 Mbps
+modulation: COFDM (ISDB)
+compression: HEVC/H.265, VVC/H.266
+
+# Wide Aspect Ratios
+standard_id: wide
+name: Wide Aspect Ratios
+abbreviation: WAR
+description: Ultra-wide display formats primarily for specialty applications and immersive viewing
+
+# Ultrawide
+format_id: ultrawide
+format_name: Ultrawide
+aspect_ratio: 21:9
+decimal_ratio: 2.33
+width: 3440
+height: 1440
+total_pixels: 4953600
+scan_type: progressive
+interlaced: false
+refresh_rate_1: 60
+refresh_rate_2: 144
+field_rate: N/A
+color_space: BT.709
+bit_depth: 8-10
+color_subsampling: 4:4:4
+region_1: Global
+region_2: 
+regulatory_1: None
+regulatory_2: 
+year: 2014
+year_discontinued: 
+predecessor: 16:9 widescreen
+successor: Super Ultrawide
+screen_size_1: 29"-34"
+screen_size_2: 35"-38"
+viewing_distance: 2x screen width
+bandwidth: n/a (not broadcast)
+modulation: n/a (not broadcast)
+compression: n/a (display format)
+
+# Super Ultrawide
+format_id: super-ultrawide
+format_name: Super Ultrawide
+aspect_ratio: 32:9
+decimal_ratio: 3.56
+width: 5120
+height: 1440
+total_pixels: 7372800
+scan_type: progressive
+interlaced: false
+refresh_rate_1: 60
+refresh_rate_2: 240
+field_rate: N/A
+color_space: BT.709
+bit_depth: 8-10
+color_subsampling: 4:4:4
+region_1: Global
+region_2: 
+regulatory_1: None
+regulatory_2: 
+year: 2019
+year_discontinued: 
+predecessor: Ultrawide
+successor: 
+screen_size_1: 43"-49"
+screen_size_2: 49"-57"
+viewing_distance: 1.5x screen width
+bandwidth: n/a (not broadcast)
+modulation: n/a (not broadcast)
+compression: n/a (display format)
+# ITEM-DATA-END

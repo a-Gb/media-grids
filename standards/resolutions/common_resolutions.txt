@@ -1,0 +1,54 @@
+Common Display Resolutions:
+
+Standard Definition:
+- 320×240: QVGA (Quarter VGA)
+- 640×480: VGA/SD (4:3)
+- 720×480: NTSC SD widescreen (3:2)
+- 720×576: PAL SD widescreen (5:4)
+
+High Definition:
+- 1280×720: HD/720p (16:9)
+- 1920×1080: Full HD/1080p (16:9)
+- 2560×1440: QHD/WQHD/1440p (16:9)
+
+Ultra High Definition:
+- 3840×2160: 4K UHD (16:9)
+- 7680×4320: 8K UHD (16:9)
+
+Cinema Digital:
+- 2048×1080: 2K DCI (≈19:10)
+- 4096×2160: 4K DCI (≈19:10)
+
+Computer Displays:
+- 800×600: SVGA (4:3)
+- 1024×768: XGA (4:3)
+- 1280×800: WXGA (16:10)
+- 1280×1024: SXGA (5:4)
+- 1366×768: HD (16:9) - Common laptop resolution
+- 1440×900: WXGA+ (16:10)
+- 1600×900: HD+ (16:9)
+- 1600×1200: UXGA (4:3)
+- 1680×1050: WSXGA+ (16:10)
+- 1920×1200: WUXGA (16:10)
+- 2560×1600: WQXGA (16:10)
+- 3440×1440: UWQHD (21:9)
+- 5120×1440: DUWQHD (32:9)
+
+Mobile Devices:
+- 240×320: QVGA (3:4) - Feature phones
+- 480×800: WVGA (9:15) - Early smartphones
+- 640×960: DVGA (2:3) - iPhone 4
+- 720×1280: HD (9:16) - Early HD smartphones
+- 750×1334: iPhone 6-8
+- 1080×1920: Full HD (9:16) - Standard smartphones
+- 1125×2436: iPhone X/XS/11 Pro
+- 1170×2532: iPhone 12/13 Pro
+- 1284×2778: iPhone 12/13 Pro Max
+- 1290×2796: iPhone 15 Pro Max
+- 1440×3120: QHD+ - Samsung Galaxy S24 Ultra
+
+Print (DPI dependent):
+- 8.5×11 inches: US Letter (300 DPI = 2550×3300 pixels)
+- 11×17 inches: Tabloid (300 DPI = 3300×5100 pixels)
+- A4: 210×297mm (300 DPI = 2480×3508 pixels)
+- A3: 297×420mm (300 DPI = 3508×4960 pixels)

@@ -1,0 +1,432 @@
+# Mobile Phone Displays Template
+# This template follows JSON-RPC 2.0 specification
+# Process this file to generate a valid JSON-RPC document
+
+# TEMPLATE-START
+{
+  "jsonrpc": "2.0",
+  "method": "media.get",
+  "params": {
+    "category": "mobile.phones",
+    "version": "1.0",
+    "eras": [
+      # ERA-ITEM-START
+      {
+        "era_id": "{{era_id}}",
+        "era_name": "{{era_name}}",
+        "era_span": "{{era_span}}",
+        "era_description": "{{era_description}}",
+        "devices": [
+          # DEVICE-ITEM-START
+          {
+            "id": "{{device_id}}",
+            "brand": "{{brand}}",
+            "model": "{{model}}",
+            "year": "{{year}}",
+            "display_type": "{{display_type}}",
+            "resolution": {
+              "width": "{{width}}",
+              "height": "{{height}}",
+              "total_pixels": "{{total_pixels}}",
+              "raw_resolution": "{{raw_resolution}}"
+            },
+            "physical": {
+              "display_size_inches": "{{display_size}}",
+              "diagonal_mm": "{{diagonal_mm}}",
+              "width_mm": "{{width_mm}}",
+              "height_mm": "{{height_mm}}"
+            },
+            "pixel_metrics": {
+              "aspect_ratio": "{{aspect_ratio}}",
+              "decimal_ratio": "{{decimal_ratio}}",
+              "pixel_density_ppi": "{{pixel_density}}",
+              "pixel_pitch_um": "{{pixel_pitch}}"
+            },
+            "color": {
+              "color_depth": "{{color_depth}}",
+              "bit_depth": "{{bit_depth}}",
+              "color_space": "{{color_space}}",
+              "typical_maximum_brightness": "{{brightness}}"
+            },
+            "technology": {
+              "refresh_rate": "{{refresh_rate}}",
+              "touch_technology": "{{touch_technology}}",
+              "special_features": ["{{feature_1}}", "{{feature_2}}"]
+            },
+            "context": {
+              "typical_use_cases": ["{{use_case_1}}", "{{use_case_2}}"],
+              "notable_firsts": ["{{notable_first_1}}", "{{notable_first_2}}"],
+              "successor_models": ["{{successor_1}}", "{{successor_2}}"]
+            }
+          }
+          # DEVICE-ITEM-END
+        ]
+      }
+      # ERA-ITEM-END
+    ]
+  },
+  "id": "mobile-phone-displays-{{timestamp}}"
+}
+# TEMPLATE-END
+
+# ITEM-DATA-START
+# Early Mobile Era
+era_id: early-mobile
+era_name: Early Mobile
+era_span: 1995-2004
+era_description: The first generation of consumer mobile phones with simple monochrome displays
+
+# Nokia 3310
+device_id: nokia-3310
+brand: Nokia
+model: 3310
+year: 2000
+display_type: Monochrome LCD
+width: 84
+height: 48
+total_pixels: 4032
+raw_resolution: 84×48
+display_size: 1.5
+diagonal_mm: 38.1
+width_mm: 33
+height_mm: 20
+aspect_ratio: 1.75:1
+decimal_ratio: 1.75
+pixel_density: 65
+pixel_pitch: 390
+color_depth: Monochrome
+bit_depth: 1
+color_space: N/A
+brightness: 200 nits
+refresh_rate: 60Hz
+touch_technology: None
+feature_1: Customizable ringtones
+feature_2: Replaceable covers
+use_case_1: Basic texting
+use_case_2: Phone calls
+notable_first_1: Snake game
+notable_first_2: User-replaceable cover design
+successor_1: Nokia 3330
+successor_2: Nokia 3410
+
+# Nokia 6110
+device_id: nokia-6110
+brand: Nokia
+model: 6110
+year: 1997
+display_type: Monochrome LCD
+width: 96
+height: 65
+total_pixels: 6240
+raw_resolution: 96×65
+display_size: 1.7
+diagonal_mm: 43.18
+width_mm: 35
+height_mm: 25
+aspect_ratio: 1.48:1
+decimal_ratio: 1.48
+pixel_density: 69
+pixel_pitch: 380
+color_depth: Monochrome
+bit_depth: 1
+color_space: N/A
+brightness: 180 nits
+refresh_rate: 60Hz
+touch_technology: None
+feature_1: Snake game
+feature_2: Infrared port
+use_case_1: Business communications
+use_case_2: Text messaging
+notable_first_1: NaviKey interface
+notable_first_2: Menu-driven UI
+successor_1: Nokia 6150
+successor_2: Nokia 6210
+
+# Feature Phone Era
+era_id: feature-phone
+era_name: Feature Phone
+era_span: 2002-2010
+era_description: Enhanced mobile phones with color screens and advanced features before smartphones became mainstream
+
+# Motorola RAZR V3
+device_id: motorola-razr-v3
+brand: Motorola
+model: RAZR V3
+year: 2004
+display_type: Color TFT
+width: 176
+height: 220
+total_pixels: 38720
+raw_resolution: 176×220
+display_size: 2.2
+diagonal_mm: 55.88
+width_mm: 35
+height_mm: 44
+aspect_ratio: 0.8:1
+decimal_ratio: 0.8
+pixel_density: 128
+pixel_pitch: 198
+color_depth: 262K colors
+bit_depth: 18
+color_space: sRGB
+brightness: 300 nits
+refresh_rate: 60Hz
+touch_technology: None
+feature_1: Slim metal design
+feature_2: Secondary external display
+use_case_1: Fashion statement
+use_case_2: Multimedia messaging
+notable_first_1: Ultra-thin design (13.9mm)
+notable_first_2: Metal keypad
+successor_1: RAZR V3i
+successor_2: RAZR2 V8
+
+# Nokia N95
+device_id: nokia-n95
+brand: Nokia
+model: N95
+year: 2007
+display_type: TFT LCD
+width: 240
+height: 320
+total_pixels: 76800
+raw_resolution: 240×320 (QVGA)
+display_size: 2.6
+diagonal_mm: 66.04
+width_mm: 39
+height_mm: 52
+aspect_ratio: 0.75:1
+decimal_ratio: 0.75
+pixel_density: 154
+pixel_pitch: 165
+color_depth: 16.7M colors
+bit_depth: 24
+color_space: sRGB
+brightness: 350 nits
+refresh_rate: 60Hz
+touch_technology: None
+feature_1: Dual slide design
+feature_2: 5MP camera
+use_case_1: Mobile photography
+use_case_2: GPS navigation
+notable_first_1: First with integrated GPS
+notable_first_2: Symbian S60 3rd Edition
+successor_1: Nokia N96
+successor_2: Nokia N97
+
+# Early Smartphone Era
+era_id: early-smartphone
+era_name: Early Smartphone
+era_span: 2007-2012
+era_description: The first generation of modern touchscreen smartphones that revolutionized the mobile industry
+
+# Apple iPhone (1st gen)
+device_id: iphone-1st-gen
+brand: Apple
+model: iPhone (1st gen)
+year: 2007
+display_type: LCD
+width: 320
+height: 480
+total_pixels: 153600
+raw_resolution: 320×480
+display_size: 3.5
+diagonal_mm: 88.9
+width_mm: 51.7
+height_mm: 77.5
+aspect_ratio: 3:2
+decimal_ratio: 1.5
+pixel_density: 163
+pixel_pitch: 156
+color_depth: 16.7M colors
+bit_depth: 24
+color_space: sRGB
+brightness: 500 nits
+refresh_rate: 60Hz
+touch_technology: Capacitive multitouch
+feature_1: Multitouch interface
+feature_2: Proximity sensor
+use_case_1: Mobile web browsing
+use_case_2: Media playback
+notable_first_1: First capacitive multitouch smartphone
+notable_first_2: Safari mobile browser
+successor_1: iPhone 3G
+successor_2: iPhone 3GS
+
+# HTC Dream (G1)
+device_id: htc-dream-g1
+brand: HTC
+model: Dream (G1)
+year: 2008
+display_type: TFT LCD
+width: 320
+height: 480
+total_pixels: 153600
+raw_resolution: 320×480
+display_size: 3.2
+diagonal_mm: 81.28
+width_mm: 48
+height_mm: 72
+aspect_ratio: 3:2
+decimal_ratio: 1.5
+pixel_density: 180
+pixel_pitch: 141
+color_depth: 16.7M colors
+bit_depth: 24
+color_space: sRGB
+brightness: 450 nits
+refresh_rate: 60Hz
+touch_technology: Capacitive
+feature_1: Physical keyboard
+feature_2: Trackball
+use_case_1: First Android phone
+use_case_2: Email and messaging
+notable_first_1: First Android smartphone
+notable_first_2: Android Market (now Play Store)
+successor_1: HTC Magic
+successor_2: HTC Hero
+
+# Modern Smartphone Era
+era_id: modern-smartphone
+era_name: Modern Smartphone
+era_span: 2017-Present
+era_description: High-resolution, edge-to-edge displays with advanced features and technologies
+
+# Apple iPhone 15 Pro Max
+device_id: iphone-15-pro-max
+brand: Apple
+model: iPhone 15 Pro Max
+year: 2023
+display_type: OLED
+width: 1290
+height: 2796
+total_pixels: 3606840
+raw_resolution: 1290×2796
+display_size: 6.7
+diagonal_mm: 170.18
+width_mm: 77.6
+height_mm: 168.2
+aspect_ratio: 19.5:9
+decimal_ratio: 2.17
+pixel_density: 460
+pixel_pitch: 55
+color_depth: 1B+ colors
+bit_depth: 30
+color_space: P3 Wide Color
+brightness: 2000 nits (peak outdoor)
+refresh_rate: 120Hz (ProMotion)
+touch_technology: Super Retina XDR with ProMotion
+feature_1: Dynamic Island
+feature_2: Always-On display
+use_case_1: Professional photography
+use_case_2: Mobile gaming
+notable_first_1: Titanium frame
+notable_first_2: A17 Pro chip with 3nm process
+successor_1: 
+successor_2: 
+
+# Samsung Galaxy S24 Ultra
+device_id: samsung-galaxy-s24-ultra
+brand: Samsung
+model: Galaxy S24 Ultra
+year: 2024
+display_type: Dynamic AMOLED 2X
+width: 1440
+height: 3120
+total_pixels: 4492800
+raw_resolution: 1440×3120
+display_size: 6.8
+diagonal_mm: 172.72
+width_mm: 79
+height_mm: 162
+aspect_ratio: 19.3:9
+decimal_ratio: 2.17
+pixel_density: 515
+pixel_pitch: 49
+color_depth: 1B+ colors
+bit_depth: 30
+color_space: DCI-P3
+brightness: 2600 nits (peak)
+refresh_rate: 1-120Hz (adaptive)
+touch_technology: Dynamic AMOLED 2X with 240Hz touch sampling
+feature_1: S Pen stylus
+feature_2: Vision booster
+use_case_1: Productivity
+use_case_2: Creative work
+notable_first_1: Galaxy AI integration
+notable_first_2: Titanium frame
+successor_1: 
+successor_2: 
+
+# Foldable Era
+era_id: foldable
+era_name: Foldable
+era_span: 2019-Present
+era_description: Innovative devices with flexible or multiple displays that can be folded for different use cases
+
+# Samsung Galaxy Z Fold 5
+device_id: samsung-galaxy-z-fold-5
+brand: Samsung
+model: Galaxy Z Fold 5
+year: 2023
+display_type: Dynamic AMOLED 2X
+width: 1812
+height: 2176
+total_pixels: 3942912
+raw_resolution: 1812×2176 (main), 968×2316 (cover)
+display_size: 7.6
+diagonal_mm: 193.04
+width_mm: 129.9
+height_mm: 154.9
+aspect_ratio: 1.2:1
+decimal_ratio: 1.2
+pixel_density: 374
+pixel_pitch: 68
+color_depth: 16.7M colors
+bit_depth: 24
+color_space: DCI-P3
+brightness: 1750 nits (peak)
+refresh_rate: 120Hz (adaptive)
+touch_technology: Dynamic AMOLED 2X with UTG (Ultra Thin Glass)
+feature_1: Flex mode
+feature_2: App Continuity
+use_case_1: Productivity multitasking
+use_case_2: Media consumption
+notable_first_1: Improved hinge design
+notable_first_2: IPX8 water resistance
+successor_1: 
+successor_2: 
+
+# Motorola Razr 40 Ultra
+device_id: motorola-razr-40-ultra
+brand: Motorola
+model: Razr 40 Ultra
+year: 2023
+display_type: POLED
+width: 1080
+height: 2640
+total_pixels: 2851200
+raw_resolution: 1080×2640 (main), 1056×1066 (cover)
+display_size: 6.9
+diagonal_mm: 175.26
+width_mm: 73.95
+height_mm: 171
+aspect_ratio: 22:9
+decimal_ratio: 2.44
+pixel_density: 413
+pixel_pitch: 61
+color_depth: 16.7M colors
+bit_depth: 24
+color_space: DCI-P3
+brightness: 1400 nits (peak)
+refresh_rate: 165Hz (main), 144Hz (cover)
+touch_technology: POLED flexible with UTG
+feature_1: Large external display
+feature_2: Flex View
+use_case_1: Compact smartphone
+use_case_2: Selfies with main camera
+notable_first_1: Largest cover display in a flip phone
+notable_first_2: 165Hz refresh rate
+successor_1: 
+successor_2: 
+# ITEM-DATA-END

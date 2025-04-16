@@ -1,0 +1,58 @@
+# Display Technology Template
+# This template defines the structure for display technology specifications
+
+{
+  "jsonrpc": "2.0",
+  "method": "media.get",
+  "params": {
+    "category": "display",
+    "version": "1.0",
+    "technology": {
+      "id": "{{id}}",
+      "name": "{{name}}",
+      "type": "{{type}}",
+      "resolution": {
+        "width": "{{width}}",
+        "height": "{{height}}",
+        "total_pixels": "{{total_pixels}}"
+      },
+      "aspect_ratio": {
+        "ratio": "{{aspect_ratio}}",
+        "decimal": "{{decimal_ratio}}"
+      },
+      "physical": {
+        "dimensions": {
+          "width_mm": "{{width_mm}}",
+          "height_mm": "{{height_mm}}",
+          "depth_mm": "{{depth_mm}}"
+        },
+        "weight_g": "{{weight}}"
+      },
+      "color": {
+        "bit_depth": "{{bit_depth}}",
+        "color_space": "{{color_space}}",
+        "gamut_coverage": {
+          "srgb": "{{srgb_coverage}}",
+          "adobe_rgb": "{{adobe_rgb_coverage}}",
+          "dci_p3": "{{dci_p3_coverage}}"
+        }
+      },
+      "performance": {
+        "refresh_rate_hz": "{{refresh_rate}}",
+        "response_time_ms": "{{response_time}}",
+        "brightness_nits": "{{brightness}}",
+        "contrast_ratio": "{{contrast_ratio}}"
+      },
+      "connectivity": {
+        "inputs": ["{{input_1}}", "{{input_2}}"],
+        "outputs": ["{{output_1}}", "{{output_2}}"]
+      },
+      "metadata": {
+        "year_introduced": "{{year}}",
+        "manufacturer": "{{manufacturer}}",
+        "typical_applications": ["{{application_1}}", "{{application_2}}"]
+      }
+    }
+  },
+  "id": "display-{{id}}-{{timestamp}}"
+}

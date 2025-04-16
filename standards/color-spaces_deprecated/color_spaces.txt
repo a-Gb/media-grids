@@ -1,0 +1,35 @@
+Common Color Spaces:
+
+RGB Color Models:
+- sRGB - Standard RGB color space for most displays and web content (1996)
+- Adobe RGB - Wider gamut used in professional photography (1998)
+- ProPhoto RGB - Extremely wide gamut used in high-end photo editing (2002)
+- Display P3 - Apple's color space used in newer displays, covers ~25% more than sRGB
+- Rec. 709 - HD television and video (ITU-R Recommendation BT.709)
+- Rec. 2020 - Ultra HD television (ITU-R Recommendation BT.2020)
+
+CMYK Color Models:
+- SWOP (Specifications for Web Offset Publications) - US print standard
+- FOGRA39 - European print standard (coated paper)
+- FOGRA52 - European print standard (uncoated paper)
+- Japan Color 2001 Coated - Japanese print standard
+
+CIE Color Models:
+- CIE XYZ - Foundation color space from which others are derived (1931)
+- CIE LAB - Perceptually uniform color space covering all visible colors
+- CIE LUV - Alternative to LAB for additive color systems
+
+HDR Color Spaces:
+- HDR10 - Consumer HDR standard (10-bit)
+- HDR10+ - Samsung/Amazon dynamic HDR standard
+- Dolby Vision - Dolby's proprietary HDR format (12-bit)
+- Hybrid Log-Gamma (HLG) - Broadcast-oriented HDR standard
+
+Video-Specific Color:
+- DCI-P3 - Digital Cinema Initiative color space for movie theaters
+- ACES - Academy Color Encoding System for film production
+
+Other Color Representations:
+- HSL (Hue, Saturation, Lightness) - Intuitive color model for UI design
+- HSV/HSB (Hue, Saturation, Value/Brightness) - Alternative to HSL
+- Pantone Matching System (PMS) - Proprietary color system for print

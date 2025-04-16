@@ -1,0 +1,73 @@
+# Display Technology Evolution Timeline
+# This file tracks the historical development of display technologies
+
+# Timeline: Display Evolution
+id: display-evolution
+name: Display Technology Evolution
+description: Historical timeline of major display technology developments
+
+# 1897 - Cathode Ray Tube
+year: 1897
+event: Cathode Ray Tube
+description: Karl Ferdinand Braun invents the cathode ray tube (CRT)
+reference_domain: display
+reference_id: crt
+
+# 1927 - Electronic Television
+year: 1927
+event: Electronic Television
+description: Philo Farnsworth demonstrates the first electronic television
+reference_domain: display
+reference_id: television
+reference_standard: broadcast
+reference_standard_id: ntsc
+
+# 1968 - Liquid Crystal Display
+year: 1968
+event: Liquid Crystal Display
+description: First practical LCD developed by RCA
+reference_domain: display
+reference_id: lcd
+
+# 1987 - Digital Light Processing
+year: 1987
+event: Digital Light Processing
+description: Texas Instruments develops DLP technology
+reference_domain: display
+reference_id: dlp
+reference_domain_2: display.cinema
+reference_id_2: digital-cinema
+
+# 1997 - Plasma Display Panel
+year: 1997
+event: Plasma Display Panel
+description: First commercially viable plasma displays
+reference_domain: display
+reference_id: plasma
+reference_standard: resolution
+reference_standard_id: hdtv
+
+# 2007 - OLED Displays
+year: 2007
+event: OLED Displays
+description: First commercially viable OLED displays for consumer products
+reference_domain: display
+reference_id: oled
+reference_domain_2: display.mobile
+reference_id_2: smartphone-display
+
+# 2013 - 4K Resolution Displays
+year: 2013
+event: 4K Resolution Displays
+description: First widely available 4K displays for consumers
+reference_standard: resolution
+reference_standard_id: uhd-4k
+reference_domain: display.television
+reference_id: 4k-tv
+
+# 2018 - MicroLED
+year: 2018
+event: MicroLED
+description: First commercial MicroLED displays demonstrated
+reference_domain: display
+reference_id: microled

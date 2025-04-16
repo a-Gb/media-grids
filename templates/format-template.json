@@ -1,0 +1,52 @@
+# Format Specification Template
+# This template defines the structure for media format specifications
+
+{
+  "jsonrpc": "2.0",
+  "method": "media.get",
+  "params": {
+    "category": "format",
+    "version": "1.0",
+    "format": {
+      "id": "{{id}}",
+      "name": "{{name}}",
+      "type": "{{type}}",
+      "aspect_ratio": {
+        "id": "{{aspect_ratio_id}}",
+        "ratio": "{{aspect_ratio}}",
+        "decimal": "{{decimal_ratio}}"
+      },
+      "resolution": {
+        "width": "{{width}}",
+        "height": "{{height}}",
+        "total_pixels": "{{total_pixels}}"
+      },
+      "color": {
+        "bit_depth": "{{bit_depth}}",
+        "color_space_id": "{{color_space_id}}",
+        "color_sampling": "{{color_sampling}}"
+      },
+      "temporal": {
+        "frame_rate_id": "{{frame_rate_id}}",
+        "interlaced": "{{interlaced}}",
+        "progressive": "{{progressive}}"
+      },
+      "container": {
+        "file_extensions": ["{{extension_1}}", "{{extension_2}}"],
+        "mime_types": ["{{mime_1}}", "{{mime_2}}"]
+      },
+      "compression": {
+        "codec": "{{codec}}",
+        "typical_bitrate": "{{bitrate}}",
+        "compression_ratio": "{{compression_ratio}}"
+      },
+      "metadata": {
+        "year_introduced": "{{year}}",
+        "creator": "{{creator}}",
+        "standard_body": "{{standard_body}}",
+        "typical_applications": ["{{application_1}}", "{{application_2}}"]
+      }
+    }
+  },
+  "id": "format-{{id}}-{{timestamp}}"
+}
